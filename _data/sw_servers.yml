@@ -1,5 +1,19 @@
 - name: Servers
   software:
+    - name: BitlBee
+        # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
+        link: https://bitlbee.org/
+        support:
+          v3.1:
+            cap: 3.4.2
+            multi-prefix: 3.4.2
+            sasl: 3.4.2
+            extended-join: 3.4.2
+            away-notify: 3.4.2
+          v3.2:
+            cap: 3.4.2
+            sasl: 3.4.2
+            userhost-in-names: 3.4.2
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
@@ -210,17 +224,3 @@
           starttls: 3.2.10 +
         v3.2:
           userhost-in-names: 3.2.9 +
-    - name: BitlBee
-      # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
-      link: https://bitlbee.org/
-      support:
-        v3.1:
-          cap: 3.4.2
-          multi-prefix: 3.4.2
-          sasl: 3.4.2
-          extended-join: 3.4.2
-          away-notify: 3.4.2
-        v3.2:
-          cap: 3.4.2
-          sasl: 3.4.2
-          userhost-in-names: 3.4.2
